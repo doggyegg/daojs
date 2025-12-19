@@ -47,11 +47,13 @@ function App() {
       </div>
 
       <ul>
-        {items().map((it) => (
-          <li key={it.id}>
-            {it.id}: {it.text}
-          </li>
-        ))}
+        {() =>
+          items().map((it) => (
+            <li key={it.id}>
+              {it.id}: {it.text}
+            </li>
+          ))
+        }
       </ul>
     </div>
   );
