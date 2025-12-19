@@ -1,0 +1,18 @@
+{
+  "name": "@daojs/example-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@daojs/core": "workspace:*",
+    "@daojs/dom": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0",
+    "typescript": "^5.4.5"
+  }
+}
